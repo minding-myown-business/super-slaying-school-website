@@ -1,0 +1,23 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: mintcream;
+}
+summary {
+  display: flex;
+  cursor: pointer;
+}
+details > summary span.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-right: 1%;
+}
+details[open] summary span.icon {
+  transform: rotate(90deg);
+}
+details {
+  padding: 2px;
+  margin: 2px;
+}
