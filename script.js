@@ -10,3 +10,6 @@ const gotoSchool = () => {
 const cheatOnMyHomework = () => {
   window.location.href = "https://chatgpt.com/";
 };
+const gotoDoxxing = () => {
+  window.location.href = "https://grabify.link/";
+};
