@@ -22,7 +22,7 @@ details {
   margin: 2px;
 }
 button {
-  background-color: lightgreen; /* Green */
+  background-color: rgb(148, 255, 201); /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -38,11 +38,11 @@ button {
 .quickLinkButton {
   background-color: mintcream;
   color: black;
-  border: 2px solid lightgreen;
+  border: 2px solid rgb(148, 255, 201);
   border-radius: 4px;
 }
 
 .quickLinkButton:hover {
-  background-color: lightgreen;
+  background-color: rgb(148, 255, 201);
   color: mintcream;
 }
