@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Yearly Yearbook | The Website</title>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>The Yearly Yearbook</h1>
+    <button class="quickLinkButton" type="button" onclick="backToMain()">
+      Back to The Website
+    </button>
+    <details>
+      <summary>
+        <span class="icon">➡️</span>
+        What is this?
+      </summary>
+      <p>
+        This is the Yearly Yearbook, a page where you can add your own custom
+        quotes to the list. The Yearly Yearbook&apos;s current state will be
+        archived every year. Archives <i>will be</i> stored in the folder named
+        &quot;Yearly Yearbook Past Editions&quot;.
+      </p>
+    </details>
+    <details>
+      <summary>
+        <span class="icon">➡️</span>
+        How can I add a quote?
+      </summary>
+      <p>
+        You can add a quote by filling out the form below, and clicking Submit.
+        Try to only add one quote per year.
+      </p>
+    </details>
+    <form>
+      <label for="quote">Quote:</label>
+      <textarea id="quote" name="quote" class="my-10px"></textarea>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" class="my-10px" />
+      <button type="submit" onclick="addQuote(); displayExistingQuotes()">
+        Submit
+      </button>
+    </form>
+    <br />
+    <div id="existingQuotesContainer"></div>
+    <script>
+      displayExistingQuotes();
+    </script>
+  </body>
+</html>

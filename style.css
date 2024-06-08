@@ -1,4 +1,4 @@
-html {
+* {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
@@ -24,7 +24,7 @@ details {
 button {
   background-color: rgb(148, 255, 201); /* Green */
   border: none;
-  color: white;
+  color: mintcream;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -33,16 +33,25 @@ button {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.quickLinkButton {
+.quickLinkButton,
+button:hover {
   background-color: mintcream;
   color: black;
   border: 2px solid rgb(148, 255, 201);
-  border-radius: 4px;
 }
 
 .quickLinkButton:hover {
   background-color: rgb(148, 255, 201);
   color: mintcream;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.my-10px {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
